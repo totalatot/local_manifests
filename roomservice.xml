@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="rootfan/android_device_moto_shamu" path="device/moto/shamu" remote="github" revision="los-20.0" />
+  <project name="rootfan/android_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" revision="los-20.0" />
+  <project name="rootfan/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="los-20.0" groups="pdk" />
+  <project name="rootfan/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="los-20.0" groups="pdk-qcom,qcom,qcom_display" />
+  <project name="rootfan/android_hardware_ril" path="hardware/ril" remote="github" revision="los-20.0" groups="pdk" />
+  <project name="LineageOS/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="lineage" revision="lineage-18.1" groups="qcom,qcom_gps,pdk-qcom" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="lineage" revision="lineage-20" />
+  <project name="LineageOS/android_hardware_motorola" path="hardware/motorola" remote="lineage" revision="lineage-20" />
+</manifest>
