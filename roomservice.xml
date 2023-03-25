@@ -8,4 +8,5 @@
   <project name="LineageOS/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="lineage" revision="lineage-18.1" groups="qcom,qcom_gps,pdk-qcom" />
   <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="lineage" revision="lineage-20" />
   <project name="LineageOS/android_hardware_motorola" path="hardware/motorola" remote="lineage" revision="lineage-20" />
+  <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-20" />
 </manifest>
