@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <!-- new addition -->
+
   <project path="device/moto/shamu"           name="LineageOS/android_device_moto_shamu"      revision="lineage-18.1" />
   <project path="kernel/moto/shamu"           name="LineageOS/android_kernel_moto_shamu"      revision="lineage-18.1" />
   <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy"   revision="lineage-18.1-legacy" />
@@ -27,65 +29,47 @@
   <!--remove-project name="LineageOS/android_hardware_qcom_display" /-->
   <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" revision="lineage-18.1" />
   <!--
-  cd hardware/qcom/display && git fetch https://github.com/totalatot/android_hardware_qcom_display lineage-20.0 && git cherry-pick 1f5881f873b2448b0f8932018322ff06f067720f^..d631b7b2e6ae03ac65d5cc88148dd87e404fca34 && cd -
+  cd hardware/qcom/display
+  git fetch https://github.com/totalatot/android_hardware_qcom_display lineage-20.0
+  git cherry-pick 1f5881f873b2448b0f8932018322ff06f067720f^..d631b7b2e6ae03ac65d5cc88148dd87e404fca34
   -->
   <!--remove-project name="LineageOS/android_hardware_qcom_gps" /-->
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" revision="lineage-18.1" />
   <!--remove-project name="LineageOS/android_hardware_qcom_media" /-->
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" revision="lineage-18.1" />
   <!-- ignore
-  cd hardware/qcom/media && git fetch https://github.com/LineageOS-UL/android_hardware_qcom_media lineage-20.0 && git cherry-pick 8f2abf1879e48068b86d57d8d67d799623a7157a^..075f70c24c10173a861bd84cdd08926783f6680b && cd -
+  cd hardware/qcom/media
+  git fetch https://github.com/LineageOS-UL/android_hardware_qcom_media lineage-20.0
+  git cherry-pick 8f2abf1879e48068b86d57d8d67d799623a7157a^..075f70c24c10173a861bd84cdd08926783f6680b
   -->
 
-  <!-- fetch & cherry-pick updates -->
+  <!-- fetch & cherry-pick lineage updates -->
+
   <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" />
   <!--
-  cd frameworks/opt/telephony && git fetch https://github.com/totalatot/android_frameworks_opt_telephony lineage-20.0 && git cherry-pick de39d7f9524999f926d91b32b971f30d5eb24d55^..1fa57c06667fcae2f748cd3a1b18dda967154ee1 && cd -
+  cd frameworks/opt/telephony
+  git fetch https://github.com/totalatot/android_frameworks_opt_telephony lineage-20.0
+  git cherry-pick de39d7f9524999f926d91b32b971f30d5eb24d55^..1fa57c06667fcae2f748cd3a1b18dda967154ee1
   -->
   <project path="hardware/ril" name="LineageOS/android_hardware_ril" />
   <!--
-  cd hardware/ril && git fetch https://github.com/totalatot/android_hardware_ril lineage-20.0 && git cherry-pick 64034be461965fc8f0a796b626a5f0d8dea69180^..5c8d3eacf10cf4bfffe3a7033f154485b7493bea && cd -
-  -->
-  <project path="art" name="platform/art" groups="pdk" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_art/commit/784077b3e7b3c94f9a66b9f624a34fdb441ddefc
+  cd hardware/ril
+  git fetch https://github.com/totalatot/android_hardware_ril lineage-20.0
+  git cherry-pick 64034be461965fc8f0a796b626a5f0d8dea69180^..5c8d3eacf10cf4bfffe3a7033f154485b7493bea
   -->
   <project path="bionic" name="LineageOS/android_bionic" />
-
+  <!--
+  cd bionic
+  git fetch https://github.com/totalatot/android_bionic lineage-20.0
+  git cherry-pick a215e9517c4359d63487124335933faa490515ea^..ec3099aa746b2856385e935a7494c4798b853353
+  -->
   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
-  <!--lineage
-    https://github.com/LineageOS/android_device_lineage_sepolicy/commit/68ab0f4635476bc45dcdb1c9ee932b49505dea36
+  <!--
+  cd device/lineage/sepolicy
+  git fetch https://github.com/totalatot/android_device_lineage_sepolicy lineage-20.0
+  git cherry-pick a72c4d833d5392587dca3ed60be288d4f13f7297
   -->
-  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/6f116931621a860b47d0eb66397456f8ab3e8b7f
-    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/67f4dbf7e42ed236f1e6e5d9bbd09f4be8d9a0e7
-    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/4dedf55f865dc84165c6a26fc47339ed1485d470
-  -->
-  <project path="external/perfetto" name="platform/external/perfetto" groups="pdk" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_external_perfetto/commit/0037c7c95292eeb9ee6848b6e4a0e4494486d56b
-  -->
-  <!--project path="frameworks/av" name="LineageOS/android_frameworks_av" /-->
-  <!--lineage not neccesary
-    https://github.com/LineageOS-UL/android_frameworks_av/commit/62f87d0936b2705d49f7301829ef88762178491e
-    https://github.com/LineageOS-UL/android_frameworks_av/commit/c175acdaf4382b5b2e736b93abd8bce7dee7a392
-    https://github.com/LineageOS-UL/android_frameworks_av/commit/f618066a33bd10f1762cce2bb331326440cf313b
-    https://github.com/LineageOS-UL/android_frameworks_av/commit/6bc7f3c3c420304427eee7e09d3bd8201fcc36e5
-    several camera reverts
-  -->
-  <!--project path="frameworks/base" name="LineageOS/android_frameworks_base" /-->
-  <!--lineage not neccesary 17 hacks-->
-  <project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_frameworks_libs_net/commit/0e14c27808b260024fd0b192d01b71c404550e75
-  -->
-  <!--project path="frameworks/native" name="LineageOS-UL/android_frameworks_native" /-->
-  <!--lineage 25 hacks-->
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="aosp" />
-  <!--aosp
-    LineageOS-UL/android_hardware_broadcom_libbt 5 commits
-  -->
+
   <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" />
   <!--lineage
     https://github.com/LineageOS-UL/android_hardware_interfaces/commit/bf7ca85ef36231bfe1589de8ea20421c9f25a6e0
@@ -115,37 +99,15 @@
   <!--lineage
     https://github.com/LineageOS-UL/android_packages_modules_adb/commit/14f8674186d011766f879bed37b1619b705e9127
   -->
-  <project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" />
-  <!--lineage not neccesary
-    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/d913c49c681175674163495c28b0fc9d29c14df6
-    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/722eef775048cb01ef6a3ef507dbd0ccb7ee1d89
-    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/59e502cd564ce8df4d7e43d378d51d82c696c053
-  -->
-  <project path="packages/modules/NetworkStack" name="platform/packages/modules/NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_packages_modules_NetworkStack/commit/e69943178365eac4fde0ff2275605bdd4b6e767b
-    https://github.com/LineageOS-UL/android_packages_modules_NetworkStack/commit/8ece1f03c4d688594f43a8949a359a41c973ea8b
-  -->    
   <project path="packages/modules/Wifi" name="LineageOS/android_packages_modules_Wifi" />
   <!--lineage
     https://github.com/LineageOS/android_packages_modules_Wifi/commit/b55d107afbbd567a251b710f47ae92adcb68120f
-  -->
-  <!--project path="system/bpf" name="platform/system/bpf" groups="pdk" remote="aosp" /-->
-  <!--aosp not neccesary
-    https://github.com/LineageOS-UL/android_system_bpf/commit/4968dc77cda1fffbf7f9ce52159c9601235008ca
-    https://github.com/LineageOS-UL/android_system_bpf/commit/a25dc5d7c5886683a497d13504e8496f9895fd6f
   -->
   <project path="system/core" name="LineageOS/android_system_core" />
   <!--lineage
     https://github.com/LineageOS-UL/android_system_core/commit/eb906fc2510fa47c711de8f6eeeb9dc2f63882c6
     https://github.com/LineageOS-UL/android_system_core/commit/ce1e67e3ca611236d36eb246cc39bb62634830d7
     https://github.com/LineageOS-UL/android_system_core/commit/a112cd1ad558e6205cb31e490072fdbea94e0405
-  -->
-  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" />
-  <!--aosp
-    https://github.com/LineageOS-UL/android_system_netd/commit/9d6d7157be60d33d3755ab1f174b822574017de4
-    https://github.com/LineageOS-UL/android_system_netd/commit/5296f9f57762478b35bba42830ed22d0e79ce44e
-    https://github.com/LineageOS-UL/android_system_netd/commit/89276ca086d4a64261027f6c8725bc80dbd87c0a
   -->
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" />
   <!--lineage
@@ -171,5 +133,66 @@
     https://github.com/LineageOS-UL/android_vendor_lineage/commit/db351da03e91c7750f44f7bfc490eed82d48f037
     https://github.com/LineageOS-UL/android_vendor_lineage/commit/37be8bd7d56979eda2d0fb5177b4594affec2d1f
     https://github.com/LineageOS-UL/android_vendor_lineage/commit/74c3a5c1a7acbbd6b2e1b9fcc641537e71ac81f3
+  -->
+
+  <!-- fetch & cherry-pick aosp updates -->
+
+  <project path="art" name="platform/art" groups="pdk" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_art/commit/784077b3e7b3c94f9a66b9f624a34fdb441ddefc
+  -->
+  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/6f116931621a860b47d0eb66397456f8ab3e8b7f
+    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/67f4dbf7e42ed236f1e6e5d9bbd09f4be8d9a0e7
+    https://github.com/LineageOS-UL/android_external_jemalloc_new/commit/4dedf55f865dc84165c6a26fc47339ed1485d470
+  -->
+  <project path="external/perfetto" name="platform/external/perfetto" groups="pdk" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_external_perfetto/commit/0037c7c95292eeb9ee6848b6e4a0e4494486d56b
+  -->
+  <project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_frameworks_libs_net/commit/0e14c27808b260024fd0b192d01b71c404550e75
+  -->
+  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="aosp" />
+  <!--aosp
+    LineageOS-UL/android_hardware_broadcom_libbt 5 commits
+  -->
+  <project path="packages/modules/NetworkStack" name="platform/packages/modules/NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_packages_modules_NetworkStack/commit/e69943178365eac4fde0ff2275605bdd4b6e767b
+    https://github.com/LineageOS-UL/android_packages_modules_NetworkStack/commit/8ece1f03c4d688594f43a8949a359a41c973ea8b
+  -->    
+  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="aosp" />
+  <!--aosp
+    https://github.com/LineageOS-UL/android_system_netd/commit/9d6d7157be60d33d3755ab1f174b822574017de4
+    https://github.com/LineageOS-UL/android_system_netd/commit/5296f9f57762478b35bba42830ed22d0e79ce44e
+    https://github.com/LineageOS-UL/android_system_netd/commit/89276ca086d4a64261027f6c8725bc80dbd87c0a
+  -->
+
+
+  <!--project path="frameworks/av" name="LineageOS/android_frameworks_av" /-->
+  <!--lineage not neccesary
+    https://github.com/LineageOS-UL/android_frameworks_av/commit/62f87d0936b2705d49f7301829ef88762178491e
+    https://github.com/LineageOS-UL/android_frameworks_av/commit/c175acdaf4382b5b2e736b93abd8bce7dee7a392
+    https://github.com/LineageOS-UL/android_frameworks_av/commit/f618066a33bd10f1762cce2bb331326440cf313b
+    https://github.com/LineageOS-UL/android_frameworks_av/commit/6bc7f3c3c420304427eee7e09d3bd8201fcc36e5
+    several camera reverts
+  -->
+  <!--project path="frameworks/base" name="LineageOS/android_frameworks_base" /-->
+  <!--lineage not neccesary 17 hacks-->
+  <!--project path="frameworks/native" name="LineageOS-UL/android_frameworks_native" /-->
+  <!--lineage 25 hacks-->
+  <!--project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" /-->
+  <!--lineage not neccesary
+    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/d913c49c681175674163495c28b0fc9d29c14df6
+    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/722eef775048cb01ef6a3ef507dbd0ccb7ee1d89
+    https://github.com/LineageOS-UL/android_packages_modules_Connectivity/commit/59e502cd564ce8df4d7e43d378d51d82c696c053
+  -->
+  <!--project path="system/bpf" name="platform/system/bpf" groups="pdk" remote="aosp" /-->
+  <!--aosp not neccesary
+    https://github.com/LineageOS-UL/android_system_bpf/commit/4968dc77cda1fffbf7f9ce52159c9601235008ca
+    https://github.com/LineageOS-UL/android_system_bpf/commit/a25dc5d7c5886683a497d13504e8496f9895fd6f
   -->
 </manifest>
