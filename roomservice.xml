@@ -71,68 +71,52 @@
   -->
 
   <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" />
-  <!--lineage
-    https://github.com/LineageOS-UL/android_hardware_interfaces/commit/bf7ca85ef36231bfe1589de8ea20421c9f25a6e0
-    https://github.com/LineageOS-UL/android_hardware_interfaces/commit/8d8ae34e8e3f71ce7568d29475a7946f659abe66
-    https://github.com/LineageOS-UL/android_hardware_interfaces/commit/5f8be69294f9591df34f1a420f9ddc52a7fc42b2
-    https://github.com/LineageOS-UL/android_hardware_interfaces/commit/51f11119d7852a165f41a8a8b53ea860dac16aec
+  <!--
+  cd hardware/interfaces
+  git fetch https://github.com/totalatot/android_hardware_interfaces lineage-20.0
+  git cherry-pick f180d8d24434e94a8c9d45a89eebeb59d6b1f29a^..87846dfeda24c019ffd2cea88cb21fdb8822f075
   -->
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
-  <!--lineage 
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/db430c78f4a7cd32d6351f2cefeadf527d652dcc
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/f873b46ccdc4a26b10cba124e24af37e00aa821c
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/2ca93ec9c0d96a1c268c6ddf22f252e54f4a7a60
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/84027236145b6e910e27c48d5ea19ca75fe29446
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/5160c895dd3035d2bbaa14e860f8f8b1983056ff
-    https://github.com/LineageOS-UL/android_hardware_lineage_interfaces/commit/cc316571ee48ae168f911b99a5a4df5a83457557
+  <!--
+  cd hardware/lineage/interfaces
+  git fetch https://github.com/totalatot/android_hardware_lineage_interfaces lineage-20.0
+  git cherry-pick c1d094c526a6367264d26187602a01374a7a7b51^..921ab321b0d77d0c8e5bbc7e1186341e9f263854
   -->
   <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" revision="lineage-20.0-caf" />
-  <!--lineage-caf
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/c33fe7f90664d81e6ad9cb9f940a5df3a63987dc
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/c33fe7f90664d81e6ad9cb9f940a5df3a63987dc
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/d7ad03616863014bbb2a408521b12480ab118f1a
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/50eeffc12bd81675aef04744e061731425bc7490
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/21fbe53070e59fcd370ae9f7c610fab22f149885
-    https://github.com/LineageOS-UL/android_hardware_qcom_wlan/commit/0abfd9d30ef071fe2da6a34aa49535c2426ba37a    
+  <!--
+  cd hardware/qcom-caf/wlan
+  git fetch https://github.com/totalatot/android_hardware_qcom_wlan lineage0-20.0-caf
+  git cherry-pick 6bdd40c30c4bb33334c3366021069b610a7600f6^..1f22988b0a7a5a055108d07573f8b9fa95dae0b6
   -->
   <project path="packages/modules/adb" name="LineageOS/android_packages_modules_adb" />
-  <!--lineage
-    https://github.com/LineageOS-UL/android_packages_modules_adb/commit/14f8674186d011766f879bed37b1619b705e9127
+  <!--
+  cd packages/modules/adb
+  git fetch https://github.com/totalatot/android_packages_modules_adb lineage0-20.0
+  git cherry-pick ebe76d41461fe0823e7f03e2011048fefa5cf8ea
   -->
   <project path="packages/modules/Wifi" name="LineageOS/android_packages_modules_Wifi" />
-  <!--lineage
-    https://github.com/LineageOS/android_packages_modules_Wifi/commit/b55d107afbbd567a251b710f47ae92adcb68120f
+  <!--
+  cd packages/modules/Wifi
+  git fetch https://github.com/totalatot/android_packages_modules_Wifi lineage0-20.0
+  git cherry-pick ee2d5dcf8e885dbd2bcc5d9c944dc138c33a58c2
   -->
   <project path="system/core" name="LineageOS/android_system_core" />
-  <!--lineage
-    https://github.com/LineageOS-UL/android_system_core/commit/eb906fc2510fa47c711de8f6eeeb9dc2f63882c6
-    https://github.com/LineageOS-UL/android_system_core/commit/ce1e67e3ca611236d36eb246cc39bb62634830d7
-    https://github.com/LineageOS-UL/android_system_core/commit/a112cd1ad558e6205cb31e490072fdbea94e0405
+  <!--
+  cd system/core
+  git fetch https://github.com/totalatot/android_system_core lineage0-20.0
+  git cherry-pick fda5c9265189c8d804c34249b3865933131c4566^..84e10594ade6d2713c81ac7f9acefcad887b134d
   -->
   <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" />
-  <!--lineage
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/dc010480ed514bc4062a091db4bbd3f5d80df66f
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/6579b5603cf3102a32222b5a0ff93ced64bb84ab
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/086040f1449aa29c142150ee7c7fd93ee7a3a64d
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/d55a8748e3f4234329fa3b5b4bff3641d96ef067
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/704f7e17d6dbfe03d64f53f6e2c0a3996e00cc07
-    https://github.com/LineageOS-UL/android_system_sepolicy/commit/a6cfe58e033b670d51a0f4f57b15a263d67b524a
+  <!--ignore
+  cd system/sepolicy
+  git fetch https://github.com/totalatot/android_system_sepolicy lineage0-20.0
+  git cherry-pick a6cfe58e033b670d51a0f4f57b15a263d67b524a
   -->
   <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
-  <!--lineage
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/018e177cff194705c9fe8f9be085ecdceac40e2a
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/975607beeab3d7a35fb2b14eaa0584e611517ff0 
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/3111df3a145b732f8b732a230fba0ee0214087c1
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/356707b07143e8c79113299c598aacb23f0bf381
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/ee804235953461102a3cc001483f9f1d67821ba0
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/d965b065fb2949842a80393966247ac4005e9d15
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/52260a21bf32a22324e321336c876dcfa0078ad3
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/ed77ab8f02593ff4864d270504674358a414c31d
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/7cefec4bc981d799eb4df030c324fda30f7b5170
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/7e0e8686dce8b3ec7d2630950affe0cdebba6972
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/db351da03e91c7750f44f7bfc490eed82d48f037
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/37be8bd7d56979eda2d0fb5177b4594affec2d1f
-    https://github.com/LineageOS-UL/android_vendor_lineage/commit/74c3a5c1a7acbbd6b2e1b9fcc641537e71ac81f3
+  <!--
+  cd vendor/lineage
+  git fetch https://github.com/totalatot/android_vendor_lineage lineage0-20.0
+  git cherry-pick 8781993892d34eef6a216bcbcb8f53ded4315d51^..99f983194eb89a1d0442aa78154d52b3d3cd60bd
   -->
 
   <!-- fetch & cherry-pick aosp updates -->
