@@ -37,7 +37,7 @@ cd packages/modules/Wifi && git fetch https://github.com/totalatot/android_packa
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
 cd system/core && git fetch https://github.com/totalatot/android_system_core lineage-20.0 && git cherry-pick fda5c9265189c8d804c34249b3865933131c4566^..84e10594ade6d2713c81ac7f9acefcad887b134d
 glo -10 && pwd && echo "====================================================== done ======================================================" && cd -
-cd vendor/lineage && git fetch https://github.com/totalatot/android_vendor_lineage lineage-20.0 && git cherry-pick 4c0e079d8d667c4e6b07b0527bee7c2d4b4d273e^..70f7cfc939944181ced18701dd62a414fd79bcd8
+cd vendor/lineage && git fetch https://github.com/totalatot/android_vendor_lineage lineage-20.0 && git cherry-pick bfa35ee6e4a0a5205ce60544fe6527fcdfaa5394^..b9431b1077544ac139a4f89a0851eb5eb1620582
 glo -20 && pwd && echo "====================================================== done ======================================================" && cd -
 # aosp
 cd art && git fetch https://github.com/totalatot/android_art lineage-20.0 && git cherry-pick 784077b3e7b3c94f9a66b9f624a34fdb441ddefc
@@ -50,14 +50,14 @@ cd frameworks/libs/net && git fetch https://github.com/totalatot/android_framewo
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
 cd hardware/broadcom/libbt && git fetch https://github.com/totalatot/android_hardware_broadcom_libbt lineage-20.0 && git cherry-pick b2b9c0e0e6bc2d2a70a114584984ce51c7010084^..0cb92f8cfa8c228d3b41f5f7f1801d9f734db059
 glo -10 && pwd && echo "====================================================== done ======================================================" && cd -
-cd packages/modules/NetworkStack && git fetch https://github.com/totalatot/android_packages_modules_NetworkStack lineage-20.0 && git cherry-pick e69943178365eac4fde0ff2275605bdd4b6e767b^..5e506f4ea1fdb6bf7a8d8fb8f506caeef732b2b3
+cd packages/modules/NetworkStack && git fetch https://github.com/totalatot/android_packages_modules_NetworkStack lineage-20.0 && git cherry-pick e69943178365eac4fde0ff2275605bdd4b6e767b^..8ece1f03c4d688594f43a8949a359a41c973ea8b
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
 # totalize
-#cd frameworks/base && git fetch https://github.com/totalatot/android_frameworks_base lineage-20.0 && git cherry-pick 34d7cce5a7cdab7252d68b8dc493c2e6b89bb836^..61fac7ad616150127e71bc3e9d5bc740a0afa216
-#glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
+cd frameworks/base && git fetch https://github.com/totalatot/android_frameworks_base lineage-20.0 && git cherry-pick 24bc0dc8ac7d7b222a888f07f368d68482c056a9^..b83a405d91afea030c4a71977748e30f6d4b3219
+glo -10 && pwd && echo "====================================================== done ======================================================" && cd -
 cd hardware/motorola && git fetch https://github.com/totalatot/android_hardware_motorola lineage-20.0 && git cherry-pick 67345a1cd325241a386b576e404285b867f602e1^..447dcefc9e61de03c21c4d5af692ab809a460de3
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
-cd lineage-sdk && git fetch https://github.com/totalatot/android_lineage-sdk lineage-20.0 && git cherry-pick b1314177483c7d421dc40c14631edcb1e02e391f^..e74d89b3f717ef1f1b0218f8759bf8b24ff0e2a0
+cd lineage-sdk && git fetch https://github.com/totalatot/android_lineage-sdk lineage-20.0 && git cherry-pick b1314177483c7d421dc40c14631edcb1e02e391f^..7fe25b2baa0db27e09787be09819d03259f772f5
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
 cd packages/resources/devicesettings && git fetch https://github.com/totalatot/android_packages_resources_devicesettings lineage-20.0 && git cherry-pick 1a3a78c592ba2e18884d793b765e3e8e23eddc11
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
