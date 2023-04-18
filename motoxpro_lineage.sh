@@ -1,10 +1,10 @@
 # device tree and kernel
 cd device/moto/shamu && git branch -D total
 git fetch https://github.com/totalatot/lineage_device_moto_shamu lineage-20.0:total && git checkout total
-glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
+glo -15 && pwd && echo "====================================================== done ======================================================" && cd -
 cd kernel/moto/shamu && git branch -D total
 git fetch https://github.com/totalatot/lineage_kernel_moto_shamu lineage-20.0:total && git checkout total
-glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
+glo -15 && pwd && echo "====================================================== done ======================================================" && cd -
 # hardware
 cd hardware/qcom/audio && git fetch https://github.com/totalatot/android_hardware_qcom_audio lineage-20.0 && git cherry-pick 27dff0fdd43c468d7a9c62a85f12bdcc599f9cf1^..f884bfe6727f8586efd5e5d25a6580c21559de64
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
@@ -37,7 +37,7 @@ cd packages/modules/Wifi && git fetch https://github.com/totalatot/android_packa
 glo -5 && pwd && echo "====================================================== done ======================================================" && cd -
 cd system/core && git fetch https://github.com/totalatot/android_system_core lineage-20.0 && git cherry-pick fda5c9265189c8d804c34249b3865933131c4566^..84e10594ade6d2713c81ac7f9acefcad887b134d
 glo -10 && pwd && echo "====================================================== done ======================================================" && cd -
-cd vendor/lineage && git fetch https://github.com/totalatot/android_vendor_lineage lineage-20.0 && git cherry-pick bfa35ee6e4a0a5205ce60544fe6527fcdfaa5394^..b9431b1077544ac139a4f89a0851eb5eb1620582
+cd vendor/lineage && git fetch https://github.com/totalatot/android_vendor_lineage lineage-20.0 && git cherry-pick 63a089f95b84cce9fe01ac648eed8a57fd9c91eb^..b65033df67594133bedc48103eb16b0a5578bc31
 glo -20 && pwd && echo "====================================================== done ======================================================" && cd -
 # aosp
 cd art && git fetch https://github.com/totalatot/android_art lineage-20.0 && git cherry-pick 784077b3e7b3c94f9a66b9f624a34fdb441ddefc
